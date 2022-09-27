@@ -206,7 +206,6 @@ const Home = () => {
                     <div>
                         <p className="text-lg">Message</p>
                     <textarea className="w-96">
-                        sike i lied
                     </textarea>
                     </div>
                     <div className="w-1/2 flex justify-start mt-5">
