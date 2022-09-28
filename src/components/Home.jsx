@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Image from './Image'
 import Testimonial from './Testimonial'
 import { BsHammer, BsFacebook, BsTwitter, BsLinkedin } from 'react-icons/bs'
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 
@@ -59,7 +60,7 @@ const Home = () => {
     <div>
     <div  className="flex px-10 w-full sm:justify-center sm:px-1 justify-center hero">
         <div  className="w-1/3 heroText sm:w-80 sm:items-center  mx-2 flex items-start text-left justify-center flex-col">
-            <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true" className="text-5xl font-normal sm:text-7xl text-typo w-92">
+            <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="1" data-scroll-class="appear" data-scroll-repeat="true" className="text-5xl font-normal sm:text-7xl text-typo w-92">
                 LET'S BRING YOUR VISION TO LIFE
             </h1>
             <h1 className="my-4 text-lg w-78">Making your ideas functional and Asthetically Apealling Is What We Do Best </h1>
@@ -73,9 +74,10 @@ const Home = () => {
     </div>
 
     {/* About Us */}
-    <div  className='my-10 w-full px-10 flex flex-col aboutContainer justify-center items-center mb-4'>
+    <div data-scroll-target ='js-target' id='js-target' className='my-10 w-full px-10 flex flex-col aboutContainer justify-center items-center mb-4'>
     <div className=" px-10 flex sm:px-1 sm:justify-center justify-start items-center w-full">
-    <h1 className="text-4xl sm:text-3xl text-left sm:w-44 w-2/3 border-b-4"><span className="sm:text-3xl text-5xl text-typo">1.</span> ABOUT US</h1>
+    <Element name='about'><h1 className="text-4xl sm:text-3xl text-left sm:w-44 w-2/3 border-b-4"><span className="sm:text-3xl text-5xl text-typo">1.</span> ABOUT US</h1></Element>
+    
     </div>
         <div className="flex justify-center my-16 items-center gap-5 aboutdiv">
             <div className="shadow-sm flex sm:hidden justify">
