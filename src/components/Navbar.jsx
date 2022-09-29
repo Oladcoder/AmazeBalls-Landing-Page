@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div className = "px-10 sm:px-0 sm:w-96 sm:justify-center  flex justify-between items-center w-full">
       <ul className={` ${Active ? 'showNav' : ''} flex justify-start sm:bg-typo sm:h-96 ulNav sm:px-12 items-center sm:fixed sm:flex-col sm: sm:py-14 sm:translate-x-96  w-1/3`}>
-       <Link to='about' smooth ={true}>  <li  className="text-xs px-1 sm:text-lg sm:text-white navitem hover:text-typo">HOME</li></Link>
+     <li  className="text-xs px-1 sm:text-lg sm:text-white navitem hover:text-typo">HOME</li>
         <li className="text-xs sm:text-lg px-1 sm:text-white navitem hover:text-typo">ABOUT</li>
         <li className="text-xs sm:text-lg px-1 sm:text-white navitem hover:text-typo">PORTFOLIO</li>
         <li className="text-xs sm:text-lg px-1 sm:text-white navitem hover:text-typo">TESTIMONIALS</li>

@@ -28,8 +28,6 @@ const Home = () => {
     ]
     
 
-    
-
     const [images, setImages] = useState(data)
     const checker = (item) => {
            return item.type === 'landscape'
@@ -69,19 +67,19 @@ const Home = () => {
             </button>
         </div>
         <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true" className="sideHero sm:hidden flex justify-end items-center">
-        <img  src='images/5.png' className=' heroImg'/>
+        <img alt="architecture building"  src='images/5.png' className=' heroImg'/>
         </div>
     </div>
 
     {/* About Us */}
     <div data-scroll-target ='js-target' id='js-target' className='my-10 w-full px-10 flex flex-col aboutContainer justify-center items-center mb-4'>
-    <div className=" px-10 flex sm:px-1 sm:justify-center justify-start items-center w-full">
-    <Element name='about'><h1 className="text-4xl sm:text-3xl text-left sm:w-44 w-2/3 border-b-4"><span className="sm:text-3xl text-5xl text-typo">1.</span> ABOUT US</h1></Element>
+    <div className=" px-10 flex sm:px-1 sm:justify-center justify-center items-center w-full">
+    <h1 className="text-4xl sm:text-3xl text-left sm:w-44 w-2/3 border-b-4"><span className="sm:text-3xl text-5xl text-typo">2.</span> ABOUT US</h1>
     
     </div>
         <div className="flex justify-center my-16 items-center gap-5 aboutdiv">
             <div className="shadow-sm flex sm:hidden justify">
-            <img data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-class="appear" data-scroll-repeat="true" className=" aboutImage" src="images/1.png" />
+            <img alt ="modern building" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" data-scroll-class="appear" data-scroll-repeat="true" className=" aboutImage" src="images/1.png" />
             </div>
         <div className="flex sm:w-96 sm:justify-center flex-wrap">
             <div className="w-1/2 sm:w-36 flex justify-start flex-col items-start my-4">
